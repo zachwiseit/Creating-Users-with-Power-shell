@@ -128,52 +128,45 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img <img width="1440" alt="CPS_22" src="https://github.com/user-attachments/assets/aa137118-facb-4e75-a4dd-ef1890ce5695" />
 </p>
 <p>
-23 
+23 Now sign out. 
 <p>
 <img <img width="1440" alt="CPS_23" src="https://github.com/user-attachments/assets/5e4be5ff-c0a6-43b6-a1fc-bb65b874d84d" />
 </p>
 <p>
-24
+24 Log into client-1 and put in mydomain.com\user you chose. 
+   All the users passwords by defult is "Password1". 
+   click "Continue".
 <p>
 <img <img width="1440" alt="CPS_24" src="https://github.com/user-attachments/assets/1d4c8b0d-6bc5-453c-a1c7-d6a47782f6ec" />
 </p>
 <p>
-25
+25 Now it will begin the process of starting up a new user. 
 <p>
 <img <img width="1440" alt="CPS_25" src="https://github.com/user-attachments/assets/8f30b6ad-72d1-42d3-a079-27a41ce7c48e" />
 </p>
 <p>
-26
-<p>
-<img NA
-</p>
-<p>
-27
+27 Once everything is loaded. Search Command Prompt and open it. 
 <p>
 <img <img width="1440" alt="CPS_27" src="https://github.com/user-attachments/assets/0fa7fb4a-1039-44ac-8153-bc01f1d63e7c" />
 </p>
 <p>
-28
+28 It will show that you have a local profile on this computer. 
+   At the bottom click file explorer. 
 <p>
 <img <img width="1440" alt="CPS_28" src="https://github.com/user-attachments/assets/35766363-fe56-4808-8967-79b77df23656" />
 </p>
 <p>
-29
-<p>
-<img <img width="1440" alt="CPS_29" src="https://github.com/user-attachments/assets/82c30953-1ee9-4904-800d-e6ae6e2615da" />
-</p>
-<p>
-30
+30 Go to "This PC" and click the C drive. 
 <p>
 <img <img width="1440" alt="CPS_30" src="https://github.com/user-attachments/assets/d688d79b-3fcd-4bef-a9d5-ee5129200003" />
 </p>
 <p>
-31
+31 Click "Users".
 <p>
 <img <img width="1440" alt="CPS_31" src="https://github.com/user-attachments/assets/f470e8b3-7f00-4474-9182-d5f7f6ac4bde" />
 </p>
 <p>
-32
+32 Here you can see both this users profile and the jane_admin profile as well. 
 <p>
 <img <img width="1440" alt="CPS_32" src="https://github.com/user-attachments/assets/73539b05-fa17-499b-bf86-b6b00fc7210e" />
 </p>
