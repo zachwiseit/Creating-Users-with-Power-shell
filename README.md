@@ -30,117 +30,105 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Step 4
 
 <h2>Deployment and Configuration Steps</h2>
-1
+1 The first portion of this will be Setting up the remote desktop for non-administrative users on Client-1 
+  First things first log into client-1 as mydomain.com\jane_admin
 <p>
 <p>
 <img <img width="1440" alt="CPS_1" src="https://github.com/user-attachments/assets/3f41c845-ee8b-4596-880f-4fd6a6c47f5a" />
 <p>
-2
-<p>
-<img <img width="1440" alt="CPS_2" src="https://github.com/user-attachments/assets/d8065038-569f-4ad2-95c7-4f4fd61579c9" />
-</p>
-<p>
-3
+3 Once you are logged in we are going to open system properties. 
+  Right click start and click "System".
 <p>
 <img <img width="1440" alt="CPS_3" src="https://github.com/user-attachments/assets/7ed0d897-96e4-4081-ba64-98333d3da7e0" />
 </p>
 <p>
-4
+4 On the far right click "Remote desktop". 
 <p>
 <img <img width="1440" alt="CPS_4" src="https://github.com/user-attachments/assets/247093a2-40cc-412b-a02e-0d2b04433c4a" />
 </p>
 <p>
-5
+5 Now we need tp allow “domain users” access to remote desktop.
+  Under User accounts click "Select users that can remotely access this PC.
 <p>
 <img <img width="1440" alt="CPS_5" src="https://github.com/user-attachments/assets/582e139d-d838-4f8a-b4e1-45187ceb891d" />
 </p>
 <p>
-6
+6 Click "Add".
 <p>
 <img <img width="1440" alt="CPS_6" src="https://github.com/user-attachments/assets/c5f2bffb-bbde-42dc-809d-e84804cc6082" />
 </p>
 <p>
-7
+7 In the "Enter the object names to select" text box type domain users and click "Ceheck Names". Then click "OK".
 <p>
 <img <img width="1440" alt="CPS_7" src="https://github.com/user-attachments/assets/7aae5948-2363-4997-a2ee-34dbf75ee827" />
 </p>
 <p>
-8
+8 Click "OK". 
+  Now effectlivley all domain users will be able to log into this computer. 
 <p>
 <img <img width="1440" alt="CPS_8" src="https://github.com/user-attachments/assets/60286562-732a-4fe1-ae8a-b1a0e5a8d3b2" />
 </p>
 <p>
-9
+9 Now we are going to use power shell to create multiple users inside active directory. 
+  Log back into dc-1 if you are not already. 
+  In the search bar type powershell.
 <p>
 <img <img width="1440" alt="CPS_9" src="https://github.com/user-attachments/assets/4b692f6f-256f-462c-8ac2-b6aac1f13e7c" />
 </p>
 <p>
-10
+10 In Apps right click "Windows Powershell ISE" and clcik "Run as administrator". 
 <p>
 <img <img width="1440" alt="CPS_10" src="https://github.com/user-attachments/assets/694d9cdf-35ab-4a11-9df0-8e27ce754b1c" />
 </p>
 <p>
-11
+11 Click "Yes".
 <p>
 <img <img width="1440" alt="CPS_11" src="https://github.com/user-attachments/assets/62820482-74dc-4473-8f03-c2af2c83ba9a" />
 </p>
 <p>
-12
+12 Now go to this link https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1 and copy the script 
+   Copy the Raw file. 
 <p>
 <img <img width="1440" alt="CPS_12" src="https://github.com/user-attachments/assets/1609f6b7-3b0c-4e90-af29-c748f8fbe93f" />
 </p>
 <p>
-13
+13 Back in Powershell click "New Script". 
 <p>
 <img <img width="1440" alt="CPS_13" src="https://github.com/user-attachments/assets/ee007a9b-94dc-43c1-9f21-a4aa2696449b" />
 </p>
 <p>
-14
-<p>
-<img <img width="1440" alt="CPS_14" src="https://github.com/user-attachments/assets/348c8dfb-9271-46d5-9f48-0b4a06aafcda" />
-</p>
-<p>
-15
+15 Hit CTRL S and save it to the desktop. Name it something like "create-users" anc click "Save". 
 <p>
 <img <img width="1440" alt="CPS_15" src="https://github.com/user-attachments/assets/11075ba1-0146-4da9-8b7b-46af829174e2" />
 </p>
 <p>
-16
+16Now paste that script in the open area. 
 <p>
 <img <img width="1440" alt="CPS_16" src="https://github.com/user-attachments/assets/0fa586ec-5fe0-46b6-87f7-ce408937029b" />
 </p>
 <p>
-17
-<p>
-<img <img width="1440" alt="CPS_17" src="https://github.com/user-attachments/assets/99b0359a-bcbf-43c9-8701-cd2fb4dddc4d" />
-</p>
-<p>
-18
+18 At the top click "Run Script". 
 <p>
 <img <img width="1440" alt="CPS_18" src="https://github.com/user-attachments/assets/ef3b2143-3c0a-421e-8d37-afe5705f34e0" />
 </p>
 <p>
-19
+19 mark the chekc box and click "OK".
 <p>
 <img <img width="1440" alt="CPS_19" src="https://github.com/user-attachments/assets/4a42171d-9f2b-42ce-9879-4e8ed84be483" />
 </p>
 <p>
-20
+20 Then it will begin to create multiple users (1,000 to be exact). 
 <p>
 <img <img width="1440" alt="CPS_20" src="https://github.com/user-attachments/assets/4acca608-321f-49c2-9966-5c1b8d388253" />
 </p>
 <p>
-21
-<p>
-<img <img width="1440" alt="CPS_21" src="https://github.com/user-attachments/assets/248c726f-546a-4a5f-a523-9ec69292a92c" />
-</p>
-<p>
-22
+22 If you open up Active, Right click _EMPLOYEES, and click "Refresh" you will see a list of generated names. 
+   Now pick a a user (does not matte which one) and try to log in as that user. 
 <p>
 <img <img width="1440" alt="CPS_22" src="https://github.com/user-attachments/assets/aa137118-facb-4e75-a4dd-ef1890ce5695" />
 </p>
 <p>
-23
+23 
 <p>
 <img <img width="1440" alt="CPS_23" src="https://github.com/user-attachments/assets/5e4be5ff-c0a6-43b6-a1fc-bb65b874d84d" />
 </p>
@@ -533,15 +521,5 @@ This tutorial outlines the implementation of on-premises Active Directory within
 101
 <p>
 <img <img width="1440" alt="CPS_101" src="https://github.com/user-attachments/assets/5d2b9071-283b-42c6-958b-a5973925c744" />
-</p>
-<p>
-102
-<p>
-<img <img width="1440" alt="CPS_102" src="https://github.com/user-attachments/assets/cfac67e9-3df9-4d4e-a43c-e47c6c92d55e" />
-</p>
-<p>
-103
-<p>
-<img <img width="1440" alt="CPS_103" src="https://github.com/user-attachments/assets/b56e7476-ccac-4b67-8820-cd3cc8e22b9c" />
 </p>
 <p>
