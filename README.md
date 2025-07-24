@@ -117,7 +117,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img <img width="1440" alt="CPS_19" src="https://github.com/user-attachments/assets/4a42171d-9f2b-42ce-9879-4e8ed84be483" />
 </p>
 <p>
-20 Then it will begin to create multiple users (1,000 to be exact). 
+20 Then it will begin to create multiple users (10,000 to be exact). 
 <p>
 <img <img width="1440" alt="CPS_20" src="https://github.com/user-attachments/assets/4acca608-321f-49c2-9966-5c1b8d388253" />
 </p>
@@ -171,12 +171,13 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img <img width="1440" alt="CPS_32" src="https://github.com/user-attachments/assets/73539b05-fa17-499b-bf86-b6b00fc7210e" />
 </p>
 <p>
-33
+33 Now sign out as that user. 
 <p>
 <img <img width="1440" alt="CPS_33" src="https://github.com/user-attachments/assets/bd281c4c-0ca3-4882-82ee-f26bc4ca6561" />
 </p>
 <p>
-34
+34 Back to the power shell script it will still be making users. However plenty have been create for what we need. 
+   You can either let it go till all 10,000 are created or at the top of the powershell page click the red box to Stop Operations.
 <p>
 <img <img width="1440" alt="CPS_34" src="https://github.com/user-attachments/assets/ee61c433-29d5-4dc7-890e-15192a96918d" />
 </p>
