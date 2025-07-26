@@ -242,92 +242,70 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img <img width="1440" alt="CPS_50" src="https://github.com/user-attachments/assets/b92f1359-5d37-4c96-b2e2-4ba116b56793" />
 </p>
 <p>
-51 
+51 IF you scroll down to Account Polcies/Account Lockout Policy you can see the the changes we made. 
 <p>
 <img <img width="1440" alt="CPS_51" src="https://github.com/user-attachments/assets/f9c9e95a-09ed-4628-83f4-1ded1047b7c1" />
 </p>
 <p>
-52
-<p>
-<img <img width="1440" alt="CPS_52" src="https://github.com/user-attachments/assets/89b4439f-bece-48f9-ac15-76696dcffc47" />
-</p>
-<p>
-53
+53 Now we are going to sign back into client-1 as Jane_admin to force the policy to refresh. 
 <p>
 <img <img width="1440" alt="CPS_53" src="https://github.com/user-attachments/assets/8f7bdd24-11f0-4f56-a756-114f3c1cc21b" />
 </p>
 <p>
-54
+54 Now the policy will reset over time but we are going to do that ourselves. 
+   Search Command Prompt in the search bar and click it. 
 <p>
 <img <img width="1440" alt="CPS_54" src="https://github.com/user-attachments/assets/9d0e2b96-135d-4c4f-873a-869719f576da" />
 </p>
 <p>
-55
+55 In the command line type "gpupdate /force" and press enter. 
 <p>
 <img <img width="1440" alt="CPS_55" src="https://github.com/user-attachments/assets/8df163e4-26c2-4c22-a3f8-a17ad2bda491" />
 </p>
 <p>
-56
-<p>
-<img <img width="1440" alt="CPS_56" src="https://github.com/user-attachments/assets/006d760e-3b7e-41cf-9b01-8ed39419a9c8" />
-</p>
-<p>
-57
+57 After the update was successfully complete sign out of client-1.
 <p>
 <img <img width="1440" alt="CPS_57" src="https://github.com/user-attachments/assets/abac77c3-2047-4b46-b806-f0db5ce5dc98" />
 </p>
 <p>
-58
-<p>
-<img <img width="1440" alt="CPS_58" src="https://github.com/user-attachments/assets/1c043169-2666-48ce-9724-5c3224680217" />
-</p>
-<p>
-59
+59 Now try to sign in as the user you chose with the wrong password. Do this until locked out. 
 <p>
 <img <img width="1440" alt="CPS_59" src="https://github.com/user-attachments/assets/3778416e-6755-4e32-949d-955cb61f0192" />
 </p>
 <p>
-60
+60 Afte renough attempts you will be notified that the users account has been locked out due to too many sign in attempts. 
+   Click "Close". 
 <p>
 <img <img width="1440" alt="CPS_60" src="https://github.com/user-attachments/assets/13cd8092-cc9c-494e-a011-6f77664cccb2" />
 </p>
 <p>
-61
+61 Go back to dc-1, Active Directory Users and Computers, Right click mydomain.com, and click "Find". 
 <p>
 <img <img width="1440" alt="CPS_61" src="https://github.com/user-attachments/assets/78c4bee2-259e-4d79-abc1-f180ced43af0" />
 </p>
 <p>
-62
+62 Put in the user you chose and click "Find".
 <p>
 <img <img width="1440" alt="CPS_62" src="https://github.com/user-attachments/assets/9e8d1b8a-52d5-4841-a4fb-8860db38704b" />
 </p>
 <p>
-63
+63 In the resultes you will see that users account.
+   Double click the user. 
 <p>
 <img <img width="1440" alt="CPS_63" src="https://github.com/user-attachments/assets/d0523180-7d46-48de-b694-aa6b66e42982" />
 </p>
 <p>
-64
+64 Click "Account". 
 <p>
 <img <img width="1440" alt="CPS_64" src="https://github.com/user-attachments/assets/16daa11d-99c2-45d9-a5f5-2c01c5ffcf38" />
 </p>
 <p>
-65
-<p>
-<img <img width="1440" alt="CPS_65" src="https://github.com/user-attachments/assets/6f940106-b5e5-49a3-ab54-7d2edcd60337" />
-</p>
-<p>
-66
+66Check the box next to "Unlock account" and click "Apply". 
 <p>
 <img <img width="1440" alt="CPS_66" src="https://github.com/user-attachments/assets/636fb351-25e4-4fff-b759-09778ca26062" />
 </p>
 <p>
-67
-<p>
-<img <img width="1440" alt="CPS_67" src="https://github.com/user-attachments/assets/ad2f3d58-fef7-4ccb-a943-1d826d13fdd4" />
-</p>
-<p>
-68
+68 
 <p>
 <img <img width="1440" alt="CPS_68" src="https://github.com/user-attachments/assets/4f48a391-18d5-48c1-bdd2-7213ad8b04e5" />
 </p>
