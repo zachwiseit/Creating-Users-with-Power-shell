@@ -182,87 +182,67 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img <img width="1440" alt="CPS_34" src="https://github.com/user-attachments/assets/ee61c433-29d5-4dc7-890e-15192a96918d" />
 </p>
 <p>
-35
-<p>
-<img <img width="1440" alt="CPS_35" src="https://github.com/user-attachments/assets/4ee2d5e0-f745-4d06-8706-4d58b3159d9f" />
-</p>
-<p>
-36
+36 Now we are going to go through the process of changes a users password after too many log in attempts. 
+   Go back into Active drectory and pick a random user. 
+   (Make sure you are logged out of client 1.)
 <p>
 <img <img width="1440" alt="CPS_36" src="https://github.com/user-attachments/assets/27f59375-ab09-44af-ae76-e7367b687c6a" />
 </p>
 <p>
-37
-<p>
-<img <img width="1440" alt="CPS_37" src="https://github.com/user-attachments/assets/331de04f-fa2d-4329-bf55-e104abff8f6e" />
-</p>
-<p>
-38
+38 After you choose your users we need to set up the account lockout policy in Active directory. 
+   Right click start and click "Run".
 <p>
 <img <img width="1440" alt="CPS_38" src="https://github.com/user-attachments/assets/8e2f6137-e1f2-40ed-8881-08f486411386" />
 </p>
 <p>
-39
+39 In run type "gpmc.msc" and click "OK".
 <p>
 <img <img width="1440" alt="CPS_39" src="https://github.com/user-attachments/assets/03cf0812-5fdc-4e16-81cf-ed85e90dc9cf" />
 </p>
 <p>
-40
-<p>
+40 Doing that will bring up the Group Policy Management 
+<p> 
 <img <img width="1440" alt="CPS_40" src="https://github.com/user-attachments/assets/90c719c0-3c8c-4554-aaea-433bfe4216c5" />
 </p>
 <p>
-41
-<p>
-<img <img width="1440" alt="CPS_41" src="https://github.com/user-attachments/assets/42d80597-c4b0-40d5-a6f4-4d681f5ccc9c" />
-</p>
-<p>
-42
+42 Right click "Default Domain Policy" and click "Edit". 
 <p>
 <img <img width="1440" alt="CPS_42" src="https://github.com/user-attachments/assets/d3aa7400-ecd8-4894-b86a-246c473bda7e" />
 </p>
 <p>
-43
-<p>
-<img <img width="1440" alt="CPS_43" src="https://github.com/user-attachments/assets/302064b9-192e-4f00-a2eb-93a40a5dcb0d" />
-</p>
-<p>
-44
+44 CLick the Drop arrow for Windows Settings > Security Settings then click "Account policies". 
+   Next click "Account lockout duration".
 <p>
 <img <img width="1440" alt="CPS_44" src="https://github.com/user-attachments/assets/b2397a49-cad3-4d6a-8963-38cc76e8bab7" />
 </p>
 <p>
-45
-<p>
-<img <img width="1440" alt="CPS_45" src="https://github.com/user-attachments/assets/08ca7185-9b09-4f98-8531-326536503e67" />
-</p>
-<p>
-46
+46 Check the box for Define this policy setting. Then change the Account is locked out for: to 30 minutes and click "OK". 
 <p>
 <img <img width="1440" alt="CPS_46" src="https://github.com/user-attachments/assets/6e8a7124-73c5-4cdc-a9d9-14c713be8980" />
 </p>
 <p>
-47
+47 Click "OK" again. 
 <p>
 <img <img width="1440" alt="CPS_47" src="https://github.com/user-attachments/assets/66420754-3ecf-4131-b90b-caee9e69687d" />
 </p>
 <p>
-48
+48 You can see now that the lockout duration has been changed. The account lockout threshold has also automatically updated to five invalid logon attempts. 
 <p>
 <img <img width="1440" alt="CPS_48" src="https://github.com/user-attachments/assets/20ae4c31-d0f0-46e9-a0b2-929f642a70b0" />
 </p>
 <p>
-49
+49 With that changed our policy is good and you can close the Group policy Management Editor. 
 <p>
 <img <img width="1440" alt="CPS_49" src="https://github.com/user-attachments/assets/347ea8f6-64c7-45f6-a33e-91a837ea9fc5" />
 </p>
 <p>
-50
+50 Another way to check the policy is go to Settings. 
+   Click "Close".
 <p>
 <img <img width="1440" alt="CPS_50" src="https://github.com/user-attachments/assets/b92f1359-5d37-4c96-b2e2-4ba116b56793" />
 </p>
 <p>
-51
+51 
 <p>
 <img <img width="1440" alt="CPS_51" src="https://github.com/user-attachments/assets/f9c9e95a-09ed-4628-83f4-1ded1047b7c1" />
 </p>
