@@ -406,53 +406,34 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img <img width="1440" alt="CPS_89" src="https://github.com/user-attachments/assets/495c116b-b3de-4ed2-9b8b-f3db8358be3d" />
 </p>
 <p>
-90
+90 This will show the most reacent log for that user. Click "Find Next" again will continue to go down the list. 
 <p>
 <img <img width="1440" alt="CPS_90" src="https://github.com/user-attachments/assets/cde0d1cf-668b-48b3-8b4e-8277d66c4285" />
 </p>
 <p>
-92
+92 Each event is going to be different with different information. Lets try and find those failed log in attempts. 
 <p>
 <img <img width="1440" alt="CPS_92" src="https://github.com/user-attachments/assets/6d74dd54-448e-4c9f-aa33-31127d69a0ac" />
 </p>
 <p>
-94
-<p>
-<img <img width="1440" alt="CPS_94" src="https://github.com/user-attachments/assets/65edffa5-98ba-4599-a8d7-baadfbbed6b9" />
-</p>
-<p>
-95
-<p>
-<img <img width="1440" alt="CPS_95" src="https://github.com/user-attachments/assets/8b800c0c-67c7-49fd-941b-6c4222504464" />
-</p>
-<p>
-96
+96 Go back to the start bar and search evetnvwr.msc. Then Run as administrator. 
 <p>
 <img <img width="1440" alt="CPS_96" src="https://github.com/user-attachments/assets/1a89e77f-f001-4a5f-8bbf-7ebfdbaf1231" />
 </p>
 <p>
-97
+97 Now sign in as your admin user, and click "Yes". 
 <p>
 <img <img width="1440" alt="CPS_97" src="https://github.com/user-attachments/assets/e37d03f4-dbc9-443e-834e-d94566c9e42a" />
 </p>
 <p>
-98
+98 Go back into the security logs like before. 
 <p>
 <img <img width="1440" alt="CPS_98" src="https://github.com/user-attachments/assets/f77f8202-37ec-4a9b-9afb-bf760699460e" />
 </p>
 <p>
-99
+99 After it loads you can see the audit failures from our log in attempts.
+   If you scroll down you can see additional details like the user, ip address, and much more. 
 <p>
 <img <img width="1440" alt="CPS_99" src="https://github.com/user-attachments/assets/4f8df4b1-9bb7-4348-9590-0eaf1564172f" />
-</p>
-<p>
-100
-<p>
-<img <img width="1440" alt="CPS_100" src="https://github.com/user-attachments/assets/1e7d11aa-b13b-4b4b-94cc-9c3d77fc03f2" />
-</p>
-<p>
-101
-<p>
-<img <img width="1440" alt="CPS_101" src="https://github.com/user-attachments/assets/5d2b9071-283b-42c6-958b-a5973925c744" />
 </p>
 <p>
