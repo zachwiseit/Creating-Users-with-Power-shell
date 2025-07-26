@@ -368,42 +368,40 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img <img width="1440" alt="CPS_81" src="https://github.com/user-attachments/assets/02898217-a2fb-4204-afc2-f1f20d2fc70a" />
 </p>
 <p>
-82
-<p>
-<img <img width="1440" alt="CPS_82" src="https://github.com/user-attachments/assets/218aa8b3-aad4-4c6d-9503-6822a91a9866" />
-</p>
-<p>
-83
+83 Click "Find Now" and after it refresshes the little down arrow will be gone and this user will be active again. 
 <p>
 <img <img width="1440" alt="CPS_83" src="https://github.com/user-attachments/assets/75b002b5-937d-4869-984b-401d9825f31c" />
 </p>
 <p>
-84
+84 Now we are going to go back to client-1 to verify that the account is active. 
+   Sign back in as that user. 
 <p>
 <img <img width="1440" alt="CPS_84" src="https://github.com/user-attachments/assets/879b54ca-5ac8-4b5f-a153-7e506df7d290" />
 </p>
 <p>
-85
+85 With the account reactivated you will be signed back into client-1.
 <p>
 <img <img width="1440" alt="CPS_85" src="https://github.com/user-attachments/assets/2a3b68ce-40d7-4267-9541-ea6311261bbf" />
 </p>
 <p>
-86
+86 Lastly we are going to go through the steps to check and observe the logs in the Domain Controller. 
+   Back in dc-1 search for evetnvwr.msc and click it. 
 <p>
 <img <img width="1440" alt="CPS_86" src="https://github.com/user-attachments/assets/9fd499ac-f1be-459c-a540-3bfa072526ae" />
 </p>
 <p>
-87
+87 On the left expand Windows logs rhen click "Security". 
 <p>
 <img <img width="1440" alt="CPS_87" src="https://github.com/user-attachments/assets/2fc1eb44-72b9-4d13-8230-b18039c6647c" />
 </p>
 <p>
-88
+88 There are alot of events to go through so we are going to search for specific ones. 
+   Right click "Security" and click "Find".
 <p>
 <img <img width="1440" alt="CPS_88" src="https://github.com/user-attachments/assets/7f0bae50-37c3-4d33-856e-077f1e14629e" />
 </p>
 <p>
-89
+89 In the search bar type in the user account that you have been signing in with. Then click "Find Next".
 <p>
 <img <img width="1440" alt="CPS_89" src="https://github.com/user-attachments/assets/495c116b-b3de-4ed2-9b8b-f3db8358be3d" />
 </p>
@@ -413,19 +411,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img <img width="1440" alt="CPS_90" src="https://github.com/user-attachments/assets/cde0d1cf-668b-48b3-8b4e-8277d66c4285" />
 </p>
 <p>
-91
-<p>
-<img <img width="1440" alt="CPS_91" src="https://github.com/user-attachments/assets/3216eb5a-8bb3-4938-ab4b-181f1d312c8d" />
-</p>
-<p>
 92
 <p>
 <img <img width="1440" alt="CPS_92" src="https://github.com/user-attachments/assets/6d74dd54-448e-4c9f-aa33-31127d69a0ac" />
-</p>
-<p>
-93
-<p>
-<img <img width="1440" alt="CPS_93" src="https://github.com/user-attachments/assets/0f35a809-1447-4b47-9e8e-d7eb33134a1a" />
 </p>
 <p>
 94
