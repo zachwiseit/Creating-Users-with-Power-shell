@@ -300,77 +300,70 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img <img width="1440" alt="CPS_64" src="https://github.com/user-attachments/assets/16daa11d-99c2-45d9-a5f5-2c01c5ffcf38" />
 </p>
 <p>
-66Check the box next to "Unlock account" and click "Apply". 
+66 Check the box next to "Unlock account" and click "Apply". 
 <p>
 <img <img width="1440" alt="CPS_66" src="https://github.com/user-attachments/assets/636fb351-25e4-4fff-b759-09778ca26062" />
 </p>
 <p>
-68 
+68 Go back and sign into client-1 as that user with the correct password. 
 <p>
 <img <img width="1440" alt="CPS_68" src="https://github.com/user-attachments/assets/4f48a391-18d5-48c1-bdd2-7213ad8b04e5" />
 </p>
 <p>
-69
+69 Now it is unlocked and you can get back into client-1 as that user. 
 <p>
 <img <img width="1440" alt="CPS_69" src="https://github.com/user-attachments/assets/93a8ac80-a02e-4e58-8aec-f64aa539319a" />
 </p>
 <p>
-70
+70 Another way to check that you are on that users account is go to powershell. 
 <p>
 <img <img width="1440" alt="CPS_70" src="https://github.com/user-attachments/assets/fc20e585-044e-465c-a3cb-a6bc18b078d6" />
 </p>
 <p>
-71
+71 It will state it at the top but you can also type "whoami" and click enter. 
 <p>
 <img <img width="1440" alt="CPS_71" src="https://github.com/user-attachments/assets/2047d8c2-9701-4bdb-8715-5d0a44d2914e" />
 </p>
 <p>
-72
+72 This will tell you what user is signed in. 
 <p>
 <img <img width="1440" alt="CPS_72" src="https://github.com/user-attachments/assets/e5613c2d-246f-4ad8-9a91-49381be98ded" />
 </p>
-<p>
-73
+<p> 
+73 Back in dc-1 we are going to go through the process of enabling/disabling accounts.
+   You can use a different user or the same one. Search for them again, right click the user, and click "Disable Account".
 <p>
 <img <img width="1440" alt="CPS_73" src="https://github.com/user-attachments/assets/43c18e9b-3c40-4800-871f-ec0ef1bfcb20" />
 </p>
 <p>
-74
+74 Click "OK" and now the account has been disabled. 
 <p>
 <img <img width="1440" alt="CPS_74" src="https://github.com/user-attachments/assets/976af94f-a79f-4b9e-931c-cb0f0caaebca" />
 </p>
 <p>
-75
-<p>
-<img <img width="1440" alt="CPS_75" src="https://github.com/user-attachments/assets/da5ef2dc-0092-4187-bb86-74f858abc421" />
-</p>
-<p>
-76
+76 IF you click "Find Now" again the user will have a little down arrow next to their icon showing the account is disabled. 
 <p>
 <img <img width="1440" alt="CPS_76" src="https://github.com/user-attachments/assets/1cd57c6e-3b7f-45a4-99cc-cbda2c8a4476" />
 </p>
 <p>
-77
+77 Next we are going to go back to client-1 and sign out. 
 <p>
 <img <img width="1440" alt="CPS_77" src="https://github.com/user-attachments/assets/4fb5d70f-f209-404a-90a1-e93b2c8e338e" />
 </p>
 <p>
-78
-<p>
-<img <img width="1440" alt="CPS_78" src="https://github.com/user-attachments/assets/532e63a7-aa0e-43d0-b6df-98eeda38e74b" />
-</p>
-<p>
-79
+79 Then try to log back in as the disabled account. 
 <p>
 <img <img width="1440" alt="CPS_79" src="https://github.com/user-attachments/assets/7b5e0316-a23c-41d8-83e8-1df7de3ed7ac" />
 </p>
 <p>
-80
+80 After you click continue this notification will pop up stating that this account is disabled. 
+   Click "Close".
 <p>
 <img <img width="1440" alt="CPS_80" src="https://github.com/user-attachments/assets/7467705e-9fe4-4e9c-b89c-697be9c35663" />
 </p>
 <p>
-81
+81 Now we are going to go back into dc-1 and enable the account. 
+   Its the same process, right click the user and click "Enable Account".
 <p>
 <img <img width="1440" alt="CPS_81" src="https://github.com/user-attachments/assets/02898217-a2fb-4204-afc2-f1f20d2fc70a" />
 </p>
